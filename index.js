@@ -14,10 +14,6 @@ app.use(
 // enable cors
 app.use(cors());
 
-app.get('/', (req, res) => {
-  res.send("hello world");
-});
-
 app.post('/api/post', (req, res) => {
   const {Username, Password, Email} = req.body;
   
